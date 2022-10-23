@@ -90,7 +90,6 @@ class Monster():
         else:
             return False
 
-    #not working properly
     def checkMonsterCollision(self,app):
         row, col = app.playerRow, app.playerCol
         mRow, mCol = self.monsterRow, self.monsterCol
@@ -110,7 +109,6 @@ class Monster():
         cx, cy = (x0 + x1)//2, ((y0 + y1)//2) - shift
         image = canvas.create_image(cx,cy, 
                             image=ImageTk.PhotoImage(self.monsterImg))
-        # drawCell(app,canvas,self.monsterRow, self.monsterCol, self.color)
 
     def moveMonsterUpDown(self, app):
             if(self.direction == -1):
