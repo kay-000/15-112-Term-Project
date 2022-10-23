@@ -24,7 +24,6 @@ def checkIfLevelDone(app): #basically checks if you've reached the end goal
         app.r -= 1
         levels(app)
 
-#I think I'll have five levels for now
 def levels(app):
     #reseting everything 
     app.maze = set()
@@ -76,7 +75,6 @@ def levels(app):
     
     elif(app.level == 6):
         app.sound.stop()
-        #SONG - Ecifircas by Sewerslvt
         app.song = 'Sewerslvt-Ecifircas.wav'
         app.sound = Sound(app.song)
         app.sound.start()
