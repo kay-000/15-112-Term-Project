@@ -11,9 +11,6 @@ from Levels import *
 import pygame
 pygame.mixer.init()
 
-#Note: I apologize for using global variables here, it was the only way I found 
-#to save certain variables everytime I need the app to restart. 
-
 player = 0 #to save the Player every time the player dies (hard mode)
 difficulty = 'Easy' #to save the difficulty every time the app restarts
 
